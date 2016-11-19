@@ -1,0 +1,15 @@
+paper_author_file.py 用来生成paper和author文件，只提取出现在new_aps_citations-2013.csv中的paper，以保证作者信息的完整性
+
+paper_author_all.csv 以前处理过的程序，包含aps数据集中全部的论文与作者对应关系。
+每行记录为doi author的形式，每行只记录一名作者，每个doi可以有多行
+
+new_paper_author.csv 该文件是paper_author_file.csv处理后生成的文件，包含作者信息完整的json文件对应的论文与作者的关系
+每行记录为doi author的形式，每行只记录一名作者，每个doi可以有多行
+
+paper_author_graph.py 用来构建paper和author组成的无向异构网络
+
+paper_author_graph_main.py 用来启动整个程序
+
+hits_value.csv 最后生成的结果文件第一列数据是作者或论文，第二列数据是authority值，第三列数据是hub值
+authority\authority(num).csv按照从大到小顺序存储authority值，其中num代表迭代次数
+hub\hub(num).csv按照从大到小顺序存储hub值其中num代表迭代次数

@@ -1,0 +1,6 @@
+validcitationfile.py是对原始aps的citation数据进行处理，
+将其中信息不完整（doi,authors,date,affiliatons（只计第一作者））的引用数据去除
+
+new_aps_citation-2013.csv是validcitationfile.py的处理结果
+
+paper_pagerank_main.py是在aps的论文引用网络上运行pagerank算法的主函数
